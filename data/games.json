@@ -648,5 +648,380 @@
             "pret"
         ],
         "auto": true
+    },
+    {
+        "title": "Pokegold",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokegold",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokepuzzle",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokepuzzle",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeemerald",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeemerald",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeruby",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeruby",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pmd Red",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pmd-red",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokefirered",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokefirered",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokegold Spaceworld",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokegold-spaceworld",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokepinballrs",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokepinballrs",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeemerald Jp",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeemerald-jp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokediamond",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokediamond",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeheartgold",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeheartgold",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ds Disassembly Tools",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/ds_disassembly_tools",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeplatinum",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeplatinum",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Colosseum Mb",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/colosseum-mb",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Gb Asm Tools",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/gb-asm-tools",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokestadiumgs",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokestadiumgs",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Dsbuild",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/dsbuild",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Oot",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/oot",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Libultraship Wiiu",
+        "original_console": "Wii U",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/libultraship-wiiu",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Libultraship Switch",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/libultraship-switch",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Shipwright Switch",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/Shipwright-Switch",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Shipwright Wiiu",
+        "original_console": "Wii U",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/Shipwright-WiiU",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "2Ship2Harkinian Wiiu",
+        "original_console": "Wii U",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/2ship2harkinian-WiiU",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Lighthouse",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/Lighthouse",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Libzip Switch",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/libzip-switch",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
     }
 ]
