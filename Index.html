@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Game Ports Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Pantalla de contraseña -->
+    <div id="login-screen">
+        <div class="login-box">
+            <h2>🔒 Acceso Privado</h2>
+            <input type="password" id="password-input" placeholder="Contraseña..." autocomplete="off">
+            <button onclick="checkPassword()">Entrar</button>
+            <p id="login-error" class="error hidden">Contraseña incorrecta</p>
+        </div>
+    </div>
+
+    <!-- Contenido principal (oculto hasta login) -->
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>🎮 Game Ports Tracker</h1>
+            <p class="subtitle">Decompilaciones y Recompilaciones de Consolas</p>
+        </header>
+
+        <!-- Filtros -->
+        <div class="filters">
+            <input type="text" id="search" placeholder="🔍 Buscar juego..." oninput="filterGames()">
+
+            <select id="filter-console" onchange="filterGames()">
+                <option value="">Todas las consolas</option>
+                <optgroup label="PlayStation">
+                    <option value="PS1">PS1</option>
+                    <option value="PS2">PS2</option>
+                    <option value="PS3">PS3</option>
+                    <option value="PS4">PS4</option>
+                    <option value="PSP">PSP</option>
+                    <option value="PS Vita">PS Vita</option>
+                </optgroup>
+                <optgroup label="Nintendo">
+                    <option value="N64">Nintendo 64</option>
+                    <option value="GameCube">GameCube</option>
+                    <option value="Wii">Wii</option>
+                    <option value="Wii U">Wii U</option>
+                    <option value="DS">Nintendo DS</option>
+                    <option value="3DS">Nintendo 3DS</option>
+                    <option value="Switch">Nintendo Switch</option>
+                    <option value="GBA">Game Boy Advance</option>
+                </optgroup>
+                <optgroup label="Xbox">
+                    <option value="Xbox">Xbox</option>
+                    <option value="Xbox 360">Xbox 360</option>
+                    <option value="Xbox One">Xbox One</option>
+                </optgroup>
+            </select>
+
+            <select id="filter-type" onchange="filterGames()">
+                <option value="">Todos los tipos</option>
+                <option value="decomp">Solo Decompilación</option>
+                <option value="recomp">Solo Recompilación</option>
+                <option value="both">Decomp + Recomp</option>
+            </select>
+
+            <select id="filter-status" onchange="filterGames()">
+                <option value="">Todos los estados</option>
+                <option value="complete">✅ Completo</option>
+                <option value="playable">🟡 Jugable</option>
+                <option value="in-development">🔴 En Desarrollo</option>
+            </select>
+        </div>
+
+        <!-- Contador -->
+        <div class="stats">
+            <span id="game-count">0 juegos encontrados</span>
+        </div>
+
+        <!-- Grid de juegos -->
+        <div id="games-grid" class="games-grid"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
