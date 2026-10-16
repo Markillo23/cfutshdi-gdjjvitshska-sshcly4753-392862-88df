@@ -8,7 +8,9 @@
         "has_recompilation": true,
         "recomp_repo": "https://github.com/n64decomp/sm64",
         "last_updated": "2026-10-10",
-        "sources": ["github"]
+        "sources": [
+            "github"
+        ]
     },
     {
         "title": "The Legend of Zelda: Ocarina of Time",
@@ -19,7 +21,9 @@
         "has_recompilation": true,
         "recomp_repo": "https://github.com/zeldaret/oot",
         "last_updated": "2026-10-12",
-        "sources": ["github"]
+        "sources": [
+            "github"
+        ]
     },
     {
         "title": "The Legend of Zelda: Majora's Mask",
@@ -30,7 +34,9 @@
         "has_recompilation": true,
         "recomp_repo": "https://github.com/zeldaret/mm",
         "last_updated": "2026-10-08",
-        "sources": ["github"]
+        "sources": [
+            "github"
+        ]
     },
     {
         "title": "The Legend of Zelda: The Wind Waker",
@@ -41,7 +47,9 @@
         "has_recompilation": false,
         "recomp_repo": "",
         "last_updated": "2026-10-14",
-        "sources": ["github"]
+        "sources": [
+            "github"
+        ]
     },
     {
         "title": "Mario Kart 64",
@@ -52,6 +60,218 @@
         "has_recompilation": false,
         "recomp_repo": "",
         "last_updated": "2026-09-28",
-        "sources": ["github"]
+        "sources": [
+            "github"
+        ]
+    },
+    {
+        "title": "Dds Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Megami-Decomps/dds-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Persona4 Decompilation",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Raikaru/Persona4-Decompilation",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "3S Decomp Ogxb",
+        "original_console": "Xbox",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Manya3084/3s-decomp-ogxb",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Hey You Pikachu Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/ornata/hey-you-pikachu-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Tokimemo Ps1 Decomp",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/CosmicScribe64/tokimemo-ps1-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Dotr Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/kira-502/dotr-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mscharged Decomp",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/yannicksuter/mscharged-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Psx Vagrant Story",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/SomeoneIsWorking/psx-vagrant-story",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Sm64Ds Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/tangosdev/sm64ds-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Battletanx Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/AbuN64/battletanx-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Sotc Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/TheRealestNwah/sotc-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Dw1 Silicon",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/loafykitten/dw1-silicon",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Crashwoc Decomp Ps2",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/denzi-gh/crashwoc-decomp-ps2",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Eqoa Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/DabDavis/eqoa-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ragewars Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/AbuN64/ragewars-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
     }
 ]
