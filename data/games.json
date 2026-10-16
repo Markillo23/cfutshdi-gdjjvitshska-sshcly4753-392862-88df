@@ -1023,5 +1023,360 @@
             "HarbourMasters"
         ],
         "auto": true
+    },
+    {
+        "title": "Paperboat",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/HarbourMasters/PaperBoat",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "HarbourMasters"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Zelda64Recomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Zelda64Recomp/Zelda64Recomp",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "Zelda64Recomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Zelda64Recompsyms",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Zelda64Recomp/Zelda64RecompSyms",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "Zelda64Recomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mmrecompmodtemplate",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Zelda64Recomp/MMRecompModTemplate",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "Zelda64Recomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mmrecompdpadmod",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Zelda64Recomp/MMRecompDpadMod",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "Zelda64Recomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Kh Recoded Decomp",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/kh-recoded-decomp/kh-recoded-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Moh Frontline Decomp",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/kyleckroeger/moh-frontline-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Fossil Fighters Decomp",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Sojews/fossil-fighters-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ff7 Decomp",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Xeeynamo/ff7-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Beyblade Vforce Ultimate Blader Jam",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/mocchimon/beyblade-Vforce-ultimate-blader-jam-",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Dqix Decomp Kit",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/ZevyaDev/dqix-decomp-kit",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Turok2 Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/mgrz18/turok2-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Rac5 Sm Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/OpenRAC/rac5-sm-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ps2 Decomp Kit Windows",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/FIZL0/ps2-decomp-kit-windows",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ps2 Decomp Kit Linux",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/FIZL0/ps2-decomp-kit-linux",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Heroes Of Mana Decomp",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/liolu/heroes-of-mana-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Halo2 Decompiled",
+        "original_console": "Xbox",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/kirklandsig/halo2-decompiled",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Acww Decomp",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/banatic/acww-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Kanken Training 2 Decomp",
+        "original_console": "3DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/mschienbein/kanken-training-2-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Colosseum Decomp",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/grant-might/Colosseum_Decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Hp3 Gba Decomp",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/holly-hacker/hp3-gba-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Hard Corps Uprising Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/saulob/hard-corps-uprising-recompiled",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ps3Recomp",
+        "original_console": "PS3",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/sp00nznet/ps3recomp",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Fh2 Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Gabrick75/fh2-recompiled",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Vagrantstory Recomp",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/riotashley81-jpg/vagrantstory_recomp",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github"
+        ],
+        "auto": true
     }
 ]
