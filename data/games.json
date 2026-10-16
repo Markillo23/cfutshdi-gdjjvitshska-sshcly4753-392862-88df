@@ -273,5 +273,380 @@
             "github"
         ],
         "auto": true
+    },
+    {
+        "title": "Botw",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/botw",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Tp",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/tp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Oot Vc",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/oot-vc",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Z64Utils",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/Z64Utils",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Oot Gc",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/oot-gc",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Oot3D",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/oot3d",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "zeldaret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Sdk Tools",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/sdk-tools",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Oot",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/oot",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Majora",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/majora",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "007",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/007",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Perfect Dark",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/perfect_dark",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Banjo Kazooie",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/banjo-kazooie",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "n64decomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Melee",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/melee",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ogws",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/ogws",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Sms",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/sms",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ghidra Gamecube Loader",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/Ghidra-GameCube-Loader",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Decomp Training",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/decomp-training",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mkw",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/mkw",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Forecast",
+        "original_console": "Wii",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/doldecomp/forecast",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "doldecomp"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokecrystal",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokecrystal",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokered",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokered",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Poketcg",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/poketcg",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokestadium",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokestadium",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokepinball",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokepinball",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Pokeyellow",
+        "original_console": "GB",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/pret/pokeyellow",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-16",
+        "sources": [
+            "github-org",
+            "pret"
+        ],
+        "auto": true
     }
 ]
