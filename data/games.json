@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Super Mario 64",
+        "original_console": "N64",
+        "status": "complete",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/sm64",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/n64decomp/sm64",
+        "last_updated": "2026-10-10",
+        "sources": ["github"]
+    },
+    {
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "original_console": "N64",
+        "status": "complete",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/oot",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/zeldaret/oot",
+        "last_updated": "2026-10-12",
+        "sources": ["github"]
+    },
+    {
+        "title": "The Legend of Zelda: Majora's Mask",
+        "original_console": "N64",
+        "status": "complete",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/mm",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/zeldaret/mm",
+        "last_updated": "2026-10-08",
+        "sources": ["github"]
+    },
+    {
+        "title": "The Legend of Zelda: The Wind Waker",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/zeldaret/tww",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-14",
+        "sources": ["github"]
+    },
+    {
+        "title": "Mario Kart 64",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/n64decomp/mk64",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-09-28",
+        "sources": ["github"]
+    }
+]
