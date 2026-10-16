@@ -35,3 +35,4 @@ jobs:
           else
             git commit -m "Auto-update: nuevos ports detectados"
             git push
+          fi  
