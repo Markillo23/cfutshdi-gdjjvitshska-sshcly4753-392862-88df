@@ -1,6 +1,7 @@
 import json
 import os
 import re
+import base64
 import urllib.request
 import urllib.parse
 from datetime import date
@@ -8,6 +9,12 @@ from datetime import date
 DATA_FILE = "data/games.json"
 MAX_NEW_PER_RUN = 25
 TODAY = date.today().isoformat()
+
+# Títulos que quieras BORRAR del catálogo (en minúsculas). Agrega o quita aquí.
+REMOVE_TITLES = {"z64utils", "sdk tools"}
+
+# Nombres de repo que son herramientas, no juegos -> se ignoran
+SKIP_RE = r"(utils?\b|tools?\b|sdk\b|extractor\b|viewer\b|editor\b|scripts?\b|assets?\b|docs?\b|website\b|tests?\b|libs?\b)"
 
 CONSOLE_PATTERNS = [
     (r"\bwii\s*u\b", "Wii U"),
@@ -32,8 +39,8 @@ GITHUB_ORGS = ["zeldaret", "n64decomp", "doldecomp", "pret", "HarbourMasters", "
 REDDIT_SUBS = ["emulation", "EmuDev", "retrogaming", "SwitchHacks", "WiiUHacks"]
 REPO_URL_RE = r"https://(?:github|gitlab)\.com/[^\s/)]+/[^\s/)]+"
 
-def http_get_json(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {"User-Agent": "game-ports-tracker/1.0"})
+def http_get_json(url, headers=None, data=None):
+    req = urllib.request.Request(url, headers=headers or {"User-Agent": "game-ports-tracker/1.0"}, data=data)
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode())
 
@@ -93,6 +100,9 @@ def add_repo(known, new_entries, url, text, sources, force_decomp=False):
     repo_url = clean_repo_url(url)
     if not repo_url or repo_url.lower() in known:
         return
+    name = repo_url.rstrip("/").split("/")[-1]
+    if re.search(SKIP_RE, name, re.IGNORECASE):
+        return
     console = guess_console(text)
     if not console:
         return
@@ -102,7 +112,7 @@ def add_repo(known, new_entries, url, text, sources, force_decomp=False):
     if not (has_d or has_r):
         return
     known.add(repo_url.lower())
-    new_entries.append(make_entry(pretty_title(repo_url.rstrip("/").split("/")[-1]), console, has_d, has_r, repo_url, sources))
+    new_entries.append(make_entry(pretty_title(name), console, has_d, has_r, repo_url, sources))
 
 def gh_headers(token):
     h = {"User-Agent": "game-ports-tracker/1.0", "Accept": "application/vnd.github+json"}
@@ -146,12 +156,35 @@ def search_gitlab(known, new_entries):
             text = f"{proj.get('name') or ''} {proj.get('description') or ''}"
             add_repo(known, new_entries, proj.get("web_url") or "", text, ["gitlab"])
 
+def reddit_token():
+    cid = os.environ.get("REDDIT_CLIENT_ID", "")
+    csec = os.environ.get("REDDIT_CLIENT_SECRET", "")
+    if not cid or not csec:
+        return None
+    auth = base64.b64encode(f"{cid}:{csec}".encode()).decode()
+    body = urllib.parse.urlencode({"grant_type": "client_credentials"}).encode()
+    try:
+        data = http_get_json(
+            "https://www.reddit.com/api/v1/access_token",
+            headers={"Authorization": f"Basic {auth}", "User-Agent": "game-ports-tracker/1.0"},
+            data=body,
+        )
+        return data.get("access_token")
+    except Exception as e:
+        print(f"[Reddit] Error al autenticar: {e}")
+        return None
+
 def search_reddit(known, new_entries):
+    token = reddit_token()
+    if not token:
+        print("[Reddit] Desactivado (sin credenciales). Configura REDDIT_CLIENT_ID/SECRET para activarlo.")
+        return
+    headers = {"Authorization": f"Bearer {token}", "User-Agent": "game-ports-tracker/1.0"}
     for sub in REDDIT_SUBS:
-        url = (f"https://www.reddit.com/r/{sub}/search.json?"
+        url = (f"https://oauth.reddit.com/r/{sub}/search?"
                f"q=decomp+OR+recomp&restrict_sr=on&sort=new&t=month&limit=50")
         try:
-            data = http_get_json(url)
+            data = http_get_json(url, headers)
         except Exception as e:
             print(f"[Reddit] Error en r/{sub}: {e}")
             continue
@@ -178,6 +211,10 @@ def search_hackernews(known, new_entries):
 
 def main():
     games = load_games()
+    before = len(games)
+    games = [g for g in games if g.get("title", "").lower() not in REMOVE_TITLES]
+    removed = before - len(games)
+
     known = known_urls(games)
     new_entries = []
 
@@ -188,9 +225,11 @@ def main():
     search_reddit(known, new_entries)
     search_hackernews(known, new_entries)
 
-    if new_entries:
+    if new_entries or removed:
         games.extend(new_entries)
         save_games(games)
+        if removed:
+            print(f"🗑️ {removed} entradas eliminadas por REMOVE_TITLES")
         print(f"OK: {len(new_entries)} ports nuevos añadidos:")
         for e in new_entries:
             print(f"   - {e['title']} ({e['original_console']}) [{', '.join(e['sources'])}]")
