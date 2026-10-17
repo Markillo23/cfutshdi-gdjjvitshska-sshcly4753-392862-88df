@@ -6,10 +6,10 @@ import urllib.parse
 from datetime import date
 
 DATA_FILE = "data/games.json"
-MAX_NEW_PORTS_PER_GAME = 5
+MAX_TOTAL_PORTS = 5          # tope duro por juego
+MIN_STARS = 100              # solo ports con al menos 100 estrellas
 TODAY = date.today().isoformat()
 
-# Aliases por juego (para buscar ports en GitHub)
 KNOWN_GAMES = [
     {"title": "Super Mario 64", "aliases": ["sm64", "mario 64", "super mario 64"]},
     {"title": "The Legend of Zelda: Ocarina of Time", "aliases": ["oot", "ocarina of time", "zelda oot"]},
@@ -28,7 +28,10 @@ KNOWN_GAMES = [
 SKIP_RE = r"(utils?\b|tools?\b|sdk\b|extractor\b|viewer\b|editor\b|scripts?\b|assets?\b|docs?\b|website\b|tests?\b|libs?\b|emulator\b|rom\s*hack\b|texture\s*pack\b)"
 
 def http_get_json(url, headers=None):
-    req = urllib.request.Request(url, headers=headers or {"User-Agent": "game-ports-tracker/1.0"})
+    req = urllib.request.Request(
+        url,
+        headers=headers or {"User-Agent": "game-ports-tracker/1.0"},
+    )
     with urllib.request.urlopen(req, timeout=30) as r:
         return json.loads(r.read().decode())
 
@@ -44,7 +47,10 @@ def save_games(games):
         json.dump(games, f, ensure_ascii=False, indent=4)
 
 def gh_headers(token):
-    h = {"User-Agent": "game-ports-tracker/1.0", "Accept": "application/vnd.github+json"}
+    h = {
+        "User-Agent": "game-ports-tracker/1.0",
+        "Accept": "application/vnd.github+json",
+    }
     if token:
         h["Authorization"] = f"Bearer {token}"
     return h
@@ -53,7 +59,6 @@ def get_aliases(game_title):
     for known in KNOWN_GAMES:
         if known["title"].lower() == game_title.lower():
             return known["aliases"]
-    # Fallback: usar el título y su abreviatura
     aliases = [game_title.lower()]
     words = re.findall(r"\w+", game_title)
     if len(words) > 1:
@@ -63,7 +68,13 @@ def get_aliases(game_title):
     return aliases
 
 def detect_based_on(repo):
-    text = (repo["name"] + " " + (repo.get("description") or "") + " " + " ".join(repo.get("topics", []))).lower()
+    text = (
+        repo["name"]
+        + " "
+        + (repo.get("description") or "")
+        + " "
+        + " ".join(repo.get("topics", []))
+    ).lower()
     if "recomp" in text or "static recompilation" in text:
         return "recomp"
     if "decomp" in text:
@@ -74,40 +85,84 @@ def looks_like_port(repo, alias):
     name = repo["name"].lower()
     desc = (repo.get("description") or "").lower()
 
-    # Excluir herramientas/emuladores
     if re.search(SKIP_RE, name + " " + desc, re.IGNORECASE):
         return False
 
-    # Debe mencionar "port" en nombre o descripción
     if "port" not in name and "port" not in desc:
         return False
 
-    # El alias debe aparecer en nombre o descripción (confirmar que es del juego correcto)
     if alias not in name and alias not in desc:
         return False
 
     return True
 
+def get_existing_stars(port, token):
+    """Si el port ya tiene 'stars', lo usa. Si no, lo consulta en GitHub."""
+    if isinstance(port.get("stars"), int) and port["stars"] > 0:
+        return port["stars"]
+    repo_url = port.get("repo", "")
+    if not repo_url:
+        return 0
+    try:
+        # Convertir https://github.com/owner/repo -> owner/repo
+        parts = repo_url.rstrip("/").split("/")
+        owner_repo = f"{parts[-2]}/{parts[-1]}"
+        data = http_get_json(f"https://api.github.com/repos/{owner_repo}", gh_headers(token))
+        return data.get("stargazers_count", 0)
+    except Exception:
+        return 0
+
 def make_port(repo):
     stars = repo.get("stargazers_count", 0)
-    status = "playable" if stars > 100 else "in-development"
+    status = "playable" if stars > 500 else "in-development"
     return {
         "name": repo["name"],
         "repo": repo["html_url"].rstrip("/"),
         "based_on": detect_based_on(repo),
         "based_on_repo": "",
         "status": status,
+        "stars": stars,
         "last_updated": TODAY,
     }
 
+def add_or_replace_port(game, new_port, token):
+    """Añade el port si hay espacio, o sustituye el de menos estrellas si el nuevo es mejor."""
+    ports = game.setdefault("ports", [])
+
+    # 1. Si ya existe (misma URL), no hacer nada
+    existing_urls = {p["repo"].lower().rstrip("/") for p in ports}
+    if new_port["repo"].lower().rstrip("/") in existing_urls:
+        return False
+
+    # 2. Si hay espacio, añadir
+    if len(ports) < MAX_TOTAL_PORTS:
+        ports.append(new_port)
+        return True
+
+    # 3. Si está lleno, buscar el de menos estrellas
+    lowest = None
+    lowest_stars = None
+    for p in ports:
+        s = get_existing_stars(p, token)
+        if lowest_stars is None or s < lowest_stars:
+            lowest = p
+            lowest_stars = s
+
+    # 4. Si el nuevo tiene más estrellas que el mínimo, sustituir
+    if new_port["stars"] > lowest_stars:
+        ports.remove(lowest)
+        ports.append(new_port)
+        return True
+
+    return False
+
 def search_ports_for_game(game, token):
-    known_repos = {p["repo"].lower().rstrip("/") for p in game.get("ports", [])}
-    new_ports = []
+    added = 0
     aliases = get_aliases(game["title"])
 
     for alias in aliases:
         q = urllib.parse.quote(f"{alias} port")
-        url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=15"
+        url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=20"
         try:
             data = http_get_json(url, gh_headers(token))
         except Exception as e:
@@ -115,46 +170,38 @@ def search_ports_for_game(game, token):
             continue
 
         for repo in data.get("items", []):
-            if len(new_ports) >= MAX_NEW_PORTS_PER_GAME:
-                break
-
-            repo_url = repo["html_url"].rstrip("/").lower()
-            if repo_url in known_repos:
-                continue
-
-            # Filtrar ruido: mínimo de estrellas
-            if repo.get("stargazers_count", 0) < 5:
+            # Filtro de estrellas mínimo
+            if repo.get("stargazers_count", 0) < MIN_STARS:
                 continue
 
             if not looks_like_port(repo, alias):
                 continue
 
-            known_repos.add(repo_url)
-            new_ports.append(make_port(repo))
+            new_port = make_port(repo)
+            if add_or_replace_port(game, new_port, token):
+                added += 1
+                action = "añadido" if len(game["ports"]) < MAX_TOTAL_PORTS else "sustituido"
+                print(f"   + {new_port['name']} ({new_port['stars']}⭐) [{new_port['based_on'] or '?'}] -> {new_port['repo']}")
 
-    return new_ports
+    return added
 
 def main():
     games = load_games()
     token = os.environ.get("GITHUB_TOKEN", "")
-    total_new = 0
+    total = 0
 
     for game in games:
-        new_ports = search_ports_for_game(game, token)
-        if new_ports:
-            if "ports" not in game:
-                game["ports"] = []
-            game["ports"].extend(new_ports)
-            total_new += len(new_ports)
-            print(f"✅ {game['title']}: +{len(new_ports)} port(s) nuevo(s)")
-            for p in new_ports:
-                print(f"   - {p['name']} [{p['based_on'] or 'origen desconocido'}] -> {p['repo']}")
+        print(f"🔍 {game['title']}...")
+        added = search_ports_for_game(game, token)
+        if added == 0:
+            print("   Sin novedades (ya tiene los mejores o no hay candidatos con 100+⭐)")
+        total += added
 
-    if total_new > 0:
+    if total > 0:
         save_games(games)
-        print(f"\nTOTAL: {total_new} ports nuevos añadidos")
+        print(f"\n✅ TOTAL: {total} ports añadidos/sustituidos")
     else:
-        print("Sin novedades esta vez.")
+        print("\nℹ️ Sin novedades esta vez.")
 
 if __name__ == "__main__":
     main()
