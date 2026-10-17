@@ -1,0 +1,190 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0a0a0f;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+.hidden { display: none !important; }
+
+/* LOGIN */
+#login-screen {
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+}
+.login-box {
+    background: #16162a; padding: 40px; border-radius: 16px;
+    text-align: center; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    border: 1px solid #2a2a4a;
+}
+.login-box h2 { margin-bottom: 20px; color: #7c6ff0; }
+.login-box input {
+    width: 100%; padding: 12px 16px; border: 2px solid #2a2a4a;
+    border-radius: 8px; background: #0a0a1a; color: #fff;
+    font-size: 16px; margin-bottom: 16px; outline: none;
+    transition: border-color 0.3s;
+}
+.login-box input:focus { border-color: #7c6ff0; }
+.login-box button {
+    width: 100%; padding: 12px; background: #7c6ff0; color: #fff;
+    border: none; border-radius: 8px; font-size: 16px;
+    cursor: pointer; transition: background 0.3s;
+}
+.login-box button:hover { background: #6a5ce0; }
+.error { color: #ff4757; margin-top: 12px; font-size: 14px; }
+
+/* HEADER */
+header { text-align: center; padding: 30px 20px 10px; }
+header h1 {
+    font-size: 2.2em;
+    background: linear-gradient(90deg, #7c6ff0, #00d2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.subtitle { color: #888; margin-top: 8px; font-size: 1.1em; }
+
+/* FILTERS */
+.filters {
+    display: flex; gap: 12px; padding: 20px;
+    max-width: 1400px; margin: 0 auto; flex-wrap: wrap;
+    justify-content: center;
+}
+.filters input[type="text"], .filters select {
+    padding: 10px 16px; border: 2px solid #2a2a4a;
+    border-radius: 8px; background: #16162a; color: #e0e0e0;
+    font-size: 14px; outline: none; transition: border-color 0.3s;
+    min-width: 180px;
+}
+.filters input[type="text"]:focus, .filters select:focus { border-color: #7c6ff0; }
+
+/* STATS */
+.stats { text-align: center; padding: 0 20px 10px; color: #888; font-size: 14px; }
+
+/* GAMES GRID */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px; padding: 20px;
+    max-width: 1400px; margin: 0 auto;
+}
+
+/* GAME CARD */
+.game-card {
+    background: #16162a; border-radius: 12px; padding: 20px;
+    border: 1px solid #2a2a4a; cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+.game-card:hover {
+    box-shadow: 0 8px 30px rgba(124, 111, 240, 0.15);
+    border-color: #7c6ff0;
+}
+.game-card.expanded {
+    border-color: #7c6ff0;
+    box-shadow: 0 8px 30px rgba(124, 111, 240, 0.25);
+}
+
+.card-header {
+    display: flex; justify-content: space-between;
+    align-items: flex-start; margin-bottom: 12px;
+}
+.card-header h3 { font-size: 1.2em; color: #fff; }
+
+.console-badge {
+    padding: 4px 10px; border-radius: 20px;
+    font-size: 11px; font-weight: bold;
+    text-transform: uppercase; white-space: nowrap;
+}
+.badge-playstation { background: #003087; color: #fff; }
+.badge-nintendo { background: #e60012; color: #fff; }
+.badge-xbox { background: #107c10; color: #fff; }
+
+/* Port summary (collapsed) */
+.port-summary {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: #aaa;
+}
+.port-count { color: #7c6ff0; font-weight: 600; }
+.expand-hint {
+    margin-left: auto; color: #7c6ff0;
+    transition: transform 0.3s; font-size: 14px;
+}
+.game-card.expanded .expand-hint { transform: rotate(180deg); }
+
+.mini-badge {
+    padding: 2px 8px; border-radius: 4px;
+    font-size: 10px; font-weight: bold;
+}
+.mini-badge.decomp { background: rgba(0, 210, 255, 0.15); color: #00d2ff; }
+.mini-badge.recomp { background: rgba(46, 213, 115, 0.15); color: #2ed573; }
+
+/* Ports list (hidden until expand) */
+.ports-list {
+    display: none;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #2a2a4a;
+}
+.game-card.expanded .ports-list { display: block; }
+
+.no-ports {
+    color: #666; font-size: 13px; text-align: center;
+    padding: 10px;
+}
+
+.port-item {
+    background: #0a0a1a; border-radius: 10px;
+    padding: 14px; margin-bottom: 10px;
+    border: 1px solid #1e1e3a;
+}
+.port-item:last-child { margin-bottom: 0; }
+
+.port-header {
+    display: flex; justify-content: space-between;
+    align-items: center; margin-bottom: 8px;
+    gap: 10px;
+}
+.port-header strong { color: #fff; font-size: 1em; }
+
+.port-meta { margin-bottom: 8px; font-size: 12px; color: #888; }
+
+.based-on {
+    display: inline-block;
+    padding: 2px 8px; border-radius: 4px;
+    font-size: 11px; font-weight: bold;
+}
+.based-on.decomp { background: rgba(0, 210, 255, 0.12); color: #00d2ff; }
+.based-on.recomp { background: rgba(46, 213, 115, 0.12); color: #2ed573; }
+.based-on.unknown { background: rgba(150, 150, 150, 0.12); color: #999; }
+
+.based-on-link {
+    color: #7c6ff0; text-decoration: none; font-size: 11px;
+}
+.based-on-link:hover { text-decoration: underline; }
+
+.status-badge {
+    padding: 4px 10px; border-radius: 20px;
+    font-size: 12px; white-space: nowrap;
+}
+.status-complete { background: rgba(46, 213, 115, 0.15); color: #2ed573; }
+.status-playable { background: rgba(255, 165, 2, 0.15); color: #ffa502; }
+.status-in-development { background: rgba(255, 71, 87, 0.15); color: #ff4757; }
+
+.repo-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px 12px; background: #16162a;
+    border-radius: 8px; text-decoration: none;
+    color: #7c6ff0; font-size: 13px;
+    transition: background 0.2s;
+}
+.repo-link:hover { background: #1e1e3a; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .games-grid { grid-template-columns: 1fr; }
+    .filters { flex-direction: column; }
+    .filters input, .filters select { width: 100%; }
+}
