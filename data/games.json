@@ -1,0 +1,116 @@
+[
+    {
+        "title": "Super Mario 64",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "sm64ex",
+                "repo": "https://github.com/sm64pc/sm64ex",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/n64decomp/sm64",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Render96",
+                "repo": "https://github.com/Render96/Render96ex",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/n64decomp/sm64",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "The Legend of Zelda: Ocarina of Time",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "Ship of Harkinian",
+                "repo": "https://github.com/HarbourMasters/Shipwright",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/zeldaret/oot",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Zelda64Recomp",
+                "repo": "https://github.com/N64Recomp/Zelda64Recomp",
+                "based_on": "recomp",
+                "based_on_repo": "",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "The Legend of Zelda: Majora's Mask",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "2Ship2Harkinian",
+                "repo": "https://github.com/HarbourMasters/2ship2harkinian",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/zeldaret/mm",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "Perfect Dark",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "Perfect Dark PC Port",
+                "repo": "https://github.com/fgsfdsfgs/perfect_dark",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "Super Smash Bros. Melee",
+        "original_console": "GameCube",
+        "ports": [
+            {
+                "name": "Slippi",
+                "repo": "https://github.com/project-slippi/Ishiiruka",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/doldecomp/melee",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "Doom 64",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "Doom 64 EX",
+                "repo": "https://github.com/svkaiser/Doom64EX",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "complete",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    },
+    {
+        "title": "Star Fox 64",
+        "original_console": "N64",
+        "ports": [
+            {
+                "name": "sf64 PC Port",
+                "repo": "https://github.com/sonicdcer/sf64",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            }
+        ]
+    }
+]
