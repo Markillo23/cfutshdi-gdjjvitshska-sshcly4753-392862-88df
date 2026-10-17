@@ -1378,5 +1378,355 @@
             "github"
         ],
         "auto": true
+    },
+    {
+        "title": "Dmc3 Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/WadeWinningWilson/dmc3-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Conkers Bfd Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/DevOldSchool/conkers-bfd-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Kh Com Vita",
+        "original_console": "PS Vita",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/ggdrn/KH_COM_VITA",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "So3 Decomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/celophi/so3-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Snowboardkids2 Decomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/cdlewis/snowboardkids2-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "White Knight Chronicles 2 Decomp",
+        "original_console": "PS3",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/WK2D/White-Knight-Chronicles-2-Decomp",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/WK2D/White-Knight-Chronicles-2-Decomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Bakuganbb Recomp",
+        "original_console": "Xbox",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/RealAmethyst/BakuganBB-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mindover Recomp",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Maxilure/MindOver-Recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Infamous2 Recomp",
+        "original_console": "PS3",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/erikomis/infamous2-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Btrecomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/wootbeer/btrecomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Savagewindrecomp",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Revivedx/SavageWindRecomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "God Of War Recomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/KIexster/god-of-war-recomp",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/KIexster/god-of-war-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Trials Hd Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/snufflyyy/trials-hd-recompiled",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Urbz Recomp",
+        "original_console": "Xbox",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/abilliontokens/urbz-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mspacmanmazemadnessrecomp",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/adumah/MsPacManMazeMadnessRecomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Xeo3 Recomp Kit",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/fxceless/xeo3-recomp-kit",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Tales Of Legendia Ps2Recomp",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/vamidi/tales-of-legendia-ps2recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Smo Recomp",
+        "original_console": "Switch",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Coz-0/smo-recomp",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Coz-0/smo-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Rush2Recompiled",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/bryantmh/rush2recompiled",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Conker",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/zsaleeba/conker",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87715955",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-14167871-deletion_scheduled-87715955",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87704289",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87704289",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87704289",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Saints Row 1 Decomp",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/HttpAnimations/saints-row-1-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87616417",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-14167871-deletion_scheduled-87616417",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87603766",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87603766",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87603766",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
     }
 ]
