@@ -47,24 +47,6 @@
                 "status": "playable",
                 "last_updated": "2026-10-17",
                 "stars": 198
-            },
-            {
-                "name": "Super-Mario-64-3ds-port---Ultimate",
-                "repo": "https://github.com/Epic0522/Super-Mario-64-3ds-port---Ultimate",
-                "based_on": "",
-                "based_on_repo": "",
-                "status": "playable",
-                "last_updated": "2026-10-17",
-                "stars": 145
-            },
-            {
-                "name": "sm64-roblox",
-                "repo": "https://github.com/MaximumADHD/sm64-roblox",
-                "based_on": "",
-                "based_on_repo": "",
-                "status": "playable",
-                "last_updated": "2026-10-17",
-                "stars": 121
             }
         ]
     },
@@ -80,14 +62,6 @@
                 "status": "complete",
                 "last_updated": "2026-10-17",
                 "stars": 5643
-            },
-            {
-                "name": "Zelda64Recomp",
-                "repo": "https://github.com/N64Recomp/Zelda64Recomp",
-                "based_on": "recomp",
-                "based_on_repo": "",
-                "status": "complete",
-                "last_updated": "2026-10-17"
             },
             {
                 "name": "oot-pc-port",
@@ -171,15 +145,6 @@
         "original_console": "GameCube",
         "ports": [
             {
-                "name": "Slippi",
-                "repo": "https://github.com/project-slippi/Ishiiruka",
-                "based_on": "decomp",
-                "based_on_repo": "https://github.com/doldecomp/melee",
-                "status": "complete",
-                "last_updated": "2026-10-17",
-                "stars": 379
-            },
-            {
                 "name": "melee-pc",
                 "repo": "https://github.com/999sian/melee-pc",
                 "based_on": "decomp",
@@ -187,6 +152,15 @@
                 "status": "playable",
                 "last_updated": "2026-10-17",
                 "stars": 475
+            },
+            {
+                "name": "Slippi",
+                "repo": "https://github.com/project-slippi/Ishiiruka",
+                "based_on": "decomp",
+                "based_on_repo": "https://github.com/doldecomp/melee",
+                "status": "complete",
+                "last_updated": "2026-10-17",
+                "stars": 379
             },
             {
                 "name": "perfect-dark-dabs-mod",
@@ -228,15 +202,6 @@
         "original_console": "N64",
         "ports": [
             {
-                "name": "sf64 PC Port",
-                "repo": "https://github.com/sonicdcer/sf64",
-                "based_on": "decomp",
-                "based_on_repo": "",
-                "status": "playable",
-                "last_updated": "2026-10-17",
-                "stars": 350
-            },
-            {
                 "name": "Starship",
                 "repo": "https://github.com/HarbourMasters/Starship",
                 "based_on": "",
@@ -244,6 +209,15 @@
                 "status": "playable",
                 "last_updated": "2026-10-17",
                 "stars": 2099
+            },
+            {
+                "name": "sf64 PC Port",
+                "repo": "https://github.com/sonicdcer/sf64",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17",
+                "stars": 350
             }
         ]
     }
