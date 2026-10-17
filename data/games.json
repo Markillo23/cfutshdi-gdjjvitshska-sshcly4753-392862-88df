@@ -58,6 +58,46 @@
                 "based_on_repo": "",
                 "status": "playable",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "SM64-PC-Port-WebGL",
+                "repo": "https://github.com/NotAn127/SM64-PC-Port-WebGL",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64_3ds-downloads",
+                "repo": "https://github.com/TomTalker/sm64_3ds-downloads",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64-od-port",
+                "repo": "https://github.com/JohnnyonFlame/sm64-od-port",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64-steam-deck-builder",
+                "repo": "https://github.com/the-outcaster/sm64-steam-deck-builder",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64-ps4-osirizx",
+                "repo": "https://github.com/mindfreakdev/sm64-ps4-osirizx",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -120,6 +160,38 @@
                 "based_on_repo": "",
                 "status": "in-development",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Shipwright-ios",
+                "repo": "https://github.com/rebelancap/Shipwright-ios",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "ship-of-harkinian-ap-tracker",
+                "repo": "https://github.com/Brian0255/ship-of-harkinian-ap-tracker",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "shipofharkinian-ps4",
+                "repo": "https://github.com/alechurri/shipofharkinian-ps4",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Shipwright-flatpak",
+                "repo": "https://github.com/squeevee/Shipwright-flatpak",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -170,6 +242,46 @@
             {
                 "name": "um790-pro-120mm-fan-case",
                 "repo": "https://github.com/peteh/um790-pro-120mm-fan-case",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mcMMO",
+                "repo": "https://github.com/Cosmoverse/mcMMO",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmfe",
+                "repo": "https://github.com/megamixfedition/mmfe",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmb4l",
+                "repo": "https://github.com/thwill1000/mmb4l",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Tiled-MM",
+                "repo": "https://github.com/eth-cscs/Tiled-MM",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmdvm-sdr",
+                "repo": "https://github.com/r4d10n/mmdvm-sdr",
                 "based_on": "",
                 "based_on_repo": "",
                 "status": "in-development",
@@ -271,6 +383,30 @@
                 "name": "steve_in_melee",
                 "repo": "https://github.com/Yahiamice/steve_in_melee",
                 "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "gd-melee-workspace",
+                "repo": "https://github.com/GurekamDhillon/gd-melee-workspace",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "melee360",
+                "repo": "https://github.com/codepdbh/melee360",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "YAMPP",
+                "repo": "https://github.com/sonsegajp/YAMPP",
+                "based_on": "decomp",
                 "based_on_repo": "",
                 "status": "in-development",
                 "last_updated": "2026-10-17"
