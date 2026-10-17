@@ -40,13 +40,13 @@
                 "stars": 215
             },
             {
-                "name": "sm64-port-android-base",
-                "repo": "https://github.com/VDavid003/sm64-port-android-base",
-                "based_on": "",
+                "name": "PaperBoat",
+                "repo": "https://github.com/HarbourMasters/PaperBoat",
+                "based_on": "decomp",
                 "based_on_repo": "",
-                "status": "playable",
-                "last_updated": "2026-10-17",
-                "stars": 198
+                "status": "in-development",
+                "stars": 479,
+                "last_updated": "2026-10-17"
             }
         ]
     },
