@@ -4,6 +4,7 @@ import urllib.request
 
 DATA_FILE = "data/games.json"
 MIN_STARS = 100
+MAX_TOTAL_PORTS = 5  # <-- NUEVO: límite máximo de ports por juego
 
 def http_get_json(url, headers=None):
     req = urllib.request.Request(
@@ -24,7 +25,7 @@ def get_stars(repo_url, token):
         return data.get("stargazers_count", 0)
     except Exception as e:
         print(f"   ⚠️ No se pudo consultar {repo_url}: {e}")
-        return None  # None = no se pudo determinar, se conserva
+        return None
 
 def main():
     token = os.environ.get("GITHUB_TOKEN", "")
@@ -39,7 +40,7 @@ def main():
         if not ports:
             continue
 
-        kept = []
+        # 1. Rellenar estrellas si faltan
         for p in ports:
             stars = p.get("stars")
             if not isinstance(stars, int) or stars <= 0:
@@ -47,16 +48,28 @@ def main():
                 if stars is not None:
                     p["stars"] = stars
 
-            if stars is not None and stars < MIN_STARS:
-                print(f"   🗑️ {game['title']} -> {p['name']} ({stars}⭐) eliminado")
-                removed_total += 1
-            else:
-                if stars is not None:
-                    p["stars"] = stars
-                kept.append(p)
-                kept_total += 1
+        # 2. Filtrar los que no llegan al mínimo de estrellas
+        valid_ports = [p for p in ports if p.get("stars") is not None and p["stars"] >= MIN_STARS]
+        
+        # Contar cuántos se eliminan por no llegar a las estrellas
+        removed_by_stars = len(ports) - len(valid_ports)
+        removed_total += removed_by_stars
 
-        game["ports"] = kept
+        # 3. Ordenar de mayor a menor estrellas y cortar a los 5 mejores
+        valid_ports.sort(key=lambda x: x.get("stars", 0), reverse=True)
+        final_ports = valid_ports[:MAX_TOTAL_PORTS]
+        
+        # Contar cuántos se eliminan por el límite de 5
+        removed_by_limit = len(valid_ports) - len(final_ports)
+        removed_total += removed_by_limit
+
+        # Imprimir qué se borra para tener control
+        for p in ports:
+            if p not in final_ports:
+                print(f"   🗑️ {game['title']} -> {p['name']} ({p.get('stars', 0)}⭐) eliminado")
+
+        game["ports"] = final_ports
+        kept_total += len(final_ports)
 
     with open(DATA_FILE, "w", encoding="utf-8") as f:
         json.dump(games, f, ensure_ascii=False, indent=4)
