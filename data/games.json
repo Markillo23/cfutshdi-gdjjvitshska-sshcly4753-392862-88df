@@ -18,6 +18,46 @@
                 "based_on_repo": "https://github.com/n64decomp/sm64",
                 "status": "complete",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64ex-ios",
+                "repo": "https://github.com/ckosmic/sm64ex-ios",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64_3ds",
+                "repo": "https://github.com/sm64-port/sm64_3ds",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64-port-android-base",
+                "repo": "https://github.com/VDavid003/sm64-port-android-base",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Super-Mario-64-3ds-port---Ultimate",
+                "repo": "https://github.com/Epic0522/Super-Mario-64-3ds-port---Ultimate",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sm64-roblox",
+                "repo": "https://github.com/MaximumADHD/sm64-roblox",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -40,6 +80,46 @@
                 "based_on_repo": "",
                 "status": "complete",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "oot-pc-port",
+                "repo": "https://github.com/oot-pc-port/oot-pc-port",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "oot64-ps5",
+                "repo": "https://github.com/mshivam019/oot64-ps5",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "oot-dc",
+                "repo": "https://github.com/jnmartin84/oot-dc",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "anchor",
+                "repo": "https://github.com/garrettjoecox/anchor",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "ambient-ocarina-toolkit",
+                "repo": "https://github.com/umarzubair392/ambient-ocarina-toolkit",
+                "based_on": "recomp",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -53,6 +133,46 @@
                 "based_on": "decomp",
                 "based_on_repo": "https://github.com/zeldaret/mm",
                 "status": "complete",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmbot",
+                "repo": "https://github.com/mmbot/mmbot",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmp-go",
+                "repo": "https://github.com/Qv2ray/mmp-go",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "mmkv-kotlin",
+                "repo": "https://github.com/ctripcorp/mmkv-kotlin",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "MetroidMMC3",
+                "repo": "https://github.com/ZaneDubya/MetroidMMC3",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "um790-pro-120mm-fan-case",
+                "repo": "https://github.com/peteh/um790-pro-120mm-fan-case",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
                 "last_updated": "2026-10-17"
             }
         ]
@@ -68,6 +188,38 @@
                 "based_on_repo": "",
                 "status": "complete",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "perfect-dark-dabs-mod",
+                "repo": "https://github.com/DabDavis/perfect-dark-dabs-mod",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "com.mobilerpgpack.phone",
+                "repo": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "perfect-dark-2",
+                "repo": "https://github.com/MikeHazeJr/perfect-dark-2",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "PortMaster-PerfectDark",
+                "repo": "https://github.com/fpasteau/PortMaster-PerfectDark",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -81,6 +233,46 @@
                 "based_on": "decomp",
                 "based_on_repo": "https://github.com/doldecomp/melee",
                 "status": "complete",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "melee-pc",
+                "repo": "https://github.com/999sian/melee-pc",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "perfect-dark-dabs-mod",
+                "repo": "https://github.com/DabDavis/perfect-dark-dabs-mod",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "melee-unlocked",
+                "repo": "https://github.com/Hero88go/melee-unlocked",
+                "based_on": "recomp",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Melee-X",
+                "repo": "https://github.com/TechProGabe/Melee-X",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "steve_in_melee",
+                "repo": "https://github.com/Yahiamice/steve_in_melee",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
                 "last_updated": "2026-10-17"
             }
         ]
@@ -96,6 +288,38 @@
                 "based_on_repo": "",
                 "status": "complete",
                 "last_updated": "2026-10-17"
+            },
+            {
+                "name": "doom64-dc",
+                "repo": "https://github.com/jnmartin84/doom64-dc",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "com.mobilerpgpack.phone",
+                "repo": "https://github.com/sandstranger/com.mobilerpgpack.phone",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "doom64DS",
+                "repo": "https://github.com/svkaiser/doom64DS",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "doom64-dc-makefile",
+                "repo": "https://github.com/hcartiaux/doom64-dc-makefile",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "in-development",
+                "last_updated": "2026-10-17"
             }
         ]
     },
@@ -109,6 +333,22 @@
                 "based_on": "decomp",
                 "based_on_repo": "",
                 "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "Starship",
+                "repo": "https://github.com/HarbourMasters/Starship",
+                "based_on": "",
+                "based_on_repo": "",
+                "status": "playable",
+                "last_updated": "2026-10-17"
+            },
+            {
+                "name": "sf64-dc",
+                "repo": "https://github.com/jnmartin84/sf64-dc",
+                "based_on": "decomp",
+                "based_on_repo": "",
+                "status": "in-development",
                 "last_updated": "2026-10-17"
             }
         ]
