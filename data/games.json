@@ -320,21 +320,6 @@
         "auto": true
     },
     {
-        "title": "Z64Utils",
-        "original_console": "N64",
-        "status": "in-development",
-        "has_decompilation": true,
-        "decomp_repo": "https://github.com/zeldaret/Z64Utils",
-        "has_recompilation": false,
-        "recomp_repo": "",
-        "last_updated": "2026-10-16",
-        "sources": [
-            "github-org",
-            "zeldaret"
-        ],
-        "auto": true
-    },
-    {
         "title": "Oot Gc",
         "original_console": "N64",
         "status": "in-development",
@@ -361,21 +346,6 @@
         "sources": [
             "github-org",
             "zeldaret"
-        ],
-        "auto": true
-    },
-    {
-        "title": "Sdk Tools",
-        "original_console": "N64",
-        "status": "in-development",
-        "has_decompilation": true,
-        "decomp_repo": "https://github.com/n64decomp/sdk-tools",
-        "has_recompilation": false,
-        "recomp_repo": "",
-        "last_updated": "2026-10-16",
-        "sources": [
-            "github-org",
-            "n64decomp"
         ],
         "auto": true
     },
@@ -1723,6 +1693,356 @@
         "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87603766",
         "has_recompilation": true,
         "recomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87603766",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Buusfury Decomp",
+        "original_console": "Game Boy Advance",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/siruiusamory-cmyk/buusfury-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Psx Decomp",
+        "original_console": "PS1",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/diabpsx/psx_decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Geometry Wars Retro Evolved 2 Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/saulob/geometry-wars-retro-evolved-2-recompiled",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Xbox 360 Quake4 Decomp",
+        "original_console": "Xbox",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/cyberheater/Xbox-360-Quake4-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Mh4U Decomp",
+        "original_console": "3DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/mhvuze/mh4u-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Okamiden Decomp",
+        "original_console": "DS",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/dothacktranslate/okamiden-decomp",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Iss2000 Recomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Mabec-games/iss2000-recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Drakengard1Recompile",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/k1gs/Drakengard1Recompile",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Armyoftworecompilation",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/OpenPortroid/ArmyOfTwoRecompilation",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Sly2 Bevy Of Thieves",
+        "original_console": "PS2",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://github.com/Campfirecrucifix/sly2-bevy-of-thieves",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Campfirecrucifix/sly2-bevy-of-thieves",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Condemned2Recomp",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/psxrestore/Condemned2Recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Jfg Recomp",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/Dubstroy/JFG-Recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Wwf No Mercy Quest 3 Standalone",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/VistaLargaGames/WWF-No-Mercy-Quest-3-Standalone-",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Crackdown Xbox360 Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/saulob/crackdown-xbox360-recompiled",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Banjo Tooie Scurvy Dog Port",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/some-scurvy-dog/banjo-tooie-scurvy-dog-port",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Skiesofarcadialegends Recomp",
+        "original_console": "GameCube",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/ogdanimal/SkiesOfArcadiaLegends-Recomp",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "South Park Tenormans Revenge Recompiled",
+        "original_console": "Xbox 360",
+        "status": "in-development",
+        "has_decompilation": false,
+        "decomp_repo": "",
+        "has_recompilation": true,
+        "recomp_repo": "https://github.com/TekRantGaming/south-park-tenormans-revenge-recompiled",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "github"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87746827",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87746827",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87746827",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87563924",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-14167871-deletion_scheduled-87563924",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87551659",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87551659",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/chandler.bing/ecoscan-2020787-deletion_scheduled-87551659",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87521578",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-14167871-deletion_scheduled-87521578",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87508857",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-2020787-deletion_scheduled-87508857",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-2020787-deletion_scheduled-87508857",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87487562",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-14167871-deletion_scheduled-87487562",
+        "has_recompilation": false,
+        "recomp_repo": "",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 2020787 Deletion Scheduled 87481528",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-2020787-deletion_scheduled-87481528",
+        "has_recompilation": true,
+        "recomp_repo": "https://gitlab.com/rachel.green.r/ecoscan-2020787-deletion_scheduled-87481528",
+        "last_updated": "2026-10-17",
+        "sources": [
+            "gitlab"
+        ],
+        "auto": true
+    },
+    {
+        "title": "Ecoscan 14167871 Deletion Scheduled 87462646",
+        "original_console": "N64",
+        "status": "in-development",
+        "has_decompilation": true,
+        "decomp_repo": "https://gitlab.com/chandler.bing/ecoscan-14167871-deletion_scheduled-87462646",
+        "has_recompilation": false,
+        "recomp_repo": "",
         "last_updated": "2026-10-17",
         "sources": [
             "gitlab"
